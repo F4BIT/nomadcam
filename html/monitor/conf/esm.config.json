@@ -1,0 +1,50 @@
+{
+    "esm": {
+        "version": "2.5",
+        "website": "",
+        "check_updates": false,
+        "auto_refresh": 0,
+        "theme": "blue",
+        "custom_title": ""
+    },
+    "cpu": {
+        "enable_temperature": true
+    },
+    "disk": {
+        "show_tmpfs": false,
+        "show_filesystem": true
+    },
+    "last_login": {
+        "enable": true,
+        "max": 5
+    },
+    "services": {
+        "show_port": true,
+        "list": [
+            {
+                "name": "Web Server",
+                "host": "localhost",
+                "port": 80,
+                "protocol": "tcp"
+            },
+            {
+                "name": "SeekOne Server",
+                "host": "localhost",
+                "port": 25000,
+                "protocol": "tcp"
+            },
+            {
+                "name": "Webmin Server",
+                "host": "localhost",
+                "port": 10000,
+                "protocol": "tcp"
+            },
+            {
+                "name": "SSH",
+                "host": "localhost",
+                "port": 22,
+                "protocol": "tcp"
+            }
+        ]
+    }
+}
