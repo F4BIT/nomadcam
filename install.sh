@@ -8,7 +8,7 @@ rm -R /root/nomadcam
 { for i in $(seq 1 100)
 do
 echo $i
-apt-get install -y --show-progress mc git wget gnupg* apt-transport-https gdebi
+apt-get install -y --show-progress mc git wget gnupg* apt-transport-https gdebi-core dialog
 done } | whiptail --title 'Installation des pré-requis' --gauge 'Running...' 6 60 0
 
 # Clonage du GitHub
@@ -79,5 +79,5 @@ echo $i
 gdebi --n seekone-server.deb
 done } | whiptail --titel 'InstallationSeekOne Server' --gauge 'Running...' 6 60 0
 
-
+rm -R /root/nomadcam
 whiptail --title "Fin de l'installation" --msgbox "Merci de l'installation, bon ammusement" 11 60
